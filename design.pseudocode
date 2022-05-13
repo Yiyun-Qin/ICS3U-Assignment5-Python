@@ -6,11 +6,11 @@ TRY
     number_a = abs(number_a_integer)
     number_b = abs(number_b_integer)
     WHILE number_a - number_b != 0
-        |a-b| = abs(number_a - number_b)
+        absolute = abs(number_a - number_b)
         IF number_a > number_b THEN
-            number_a = |a-b|
+            number_a = absolute
         ELSE
-            number_b = |a-b|
+            number_b = absolute
     greatest_common_factor = number_a
     SHOW "The Greatest Common Factor of number_a_integer and number_b_integer is greatest_common_factor."
 EXCEPT Exception
