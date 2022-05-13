@@ -1,0 +1,19 @@
+GET number_a_string
+GET number_b_string
+TRY
+    number_a_integer = int(number_a_string)
+    number_b_integer = int(number_b_string)
+    number_a = abs(number_a_integer)
+    number_b = abs(number_b_integer)
+    WHILE number_a - number_b != 0
+        |a-b| = abs(number_a - number_b)
+        IF number_a > number_b THEN
+            number_a = |a-b|
+        ELSE
+            number_b = |a-b|
+    greatest_common_factor = number_a
+    SHOW "The Greatest Common Factor of number_a_integer and number_b_integer is greatest_common_factor."
+EXCEPT Exception
+    SHOW "Invalid number!"
+FINALLY
+    SHOW "Done."
