@@ -9,6 +9,9 @@ def main():
     # This function calculates GCF
 
     # input
+    print(
+        "This function calculates the GCF of two numbers, and it only accepts integers."
+    )
     number_a_string = input("Enter the first number: ")
     number_b_string = input("Enter the second number: ")
 
